@@ -3,10 +3,10 @@ const contentful = require("contentful");
 export const client = contentful.createClient({
   space: "hbmwn5pbkdff",
   resolveLinks: true,
-  accessToken: "TfnZU2G6OYa_3e5sNpAFUlQU0DwRM4sug0rRIMk9VGo",
+  accessToken: "5RiC9w7IeJKB2M4u6-ZO3LXIHP-OS12SZ2Y1Z-_tfj8",
 });
 
-const tempEntryId = "5DAXJaR6qWKH4Lhm0TNT54";
+const tempEntryId = "7cAjRMpGJ7uVVa1EwicDeO";
 
 export const getEntry = async (locale = null) => {
   const req = await client.getEntry(tempEntryId, { include: 5, locale });
